@@ -1,0 +1,46 @@
+body{
+    font-size:14px;
+    font-family:Arial;
+}
+.mainTable,.mainUsersTable{
+    width:100%;
+    border-collapse:collapse;
+}
+.mainTable td,.mainUsersTable td{
+    border-bottom:1px solid silver;
+    padding:5px 0 5px 0;
+}
+
+.mainTable td input[type=text],.mainUsersTable td input[type=text]{
+    border:none;
+    font:14px Arial;
+}
+
+.mainTable td input[type=button],.mainTable td input[type=password], .mainUsersTable td input[type=button]{
+    border:none;
+    background-color:#FFEE00;
+    border-radius:3px;
+    padding:5px 10px 5px 10px;
+    font-weight:bold;
+}
+
+.mainTable td input[type=button]:hover,.mainUsersTable td input[type=button]:hover{
+    background-color: #EDCF24;
+}
+
+.mainTable td, .mainUsersTable td{
+    font-family: Arial;
+}
+
+#nav{
+    background-color:#2e3436;
+}
+
+#nav ul li{
+    display:inline-block;
+    padding:10px;
+}
+
+#nav ul li a{
+    color:white;
+}
