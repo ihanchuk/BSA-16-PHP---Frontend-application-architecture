@@ -1,6 +1,8 @@
 var UserModel =require("../../models/users/UserModel.js");
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("CreateUserView.hbs","Users");
 var  CreateUserView = Marionette.ItemView.extend({
-    template: '#user-create-template',
+    template: template,
     tagName:"div",
     ui:{
         createButton:"#saveNewUser",

@@ -1,6 +1,8 @@
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("BookItemView.hbs","Books");
 var BookItemView = Backbone.Marionette.ItemView.extend({
     tagName: "tr",
-    template: '#books-template',
+    template:template,
     ui: {
         deleteModel: ".deleteModel",
         syncModel: ".syncModel",

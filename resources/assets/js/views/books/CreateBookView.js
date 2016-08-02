@@ -1,6 +1,8 @@
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("CreateBookView.hbs","Books");
 var BookModel =require("../../models/books/BookModel.js");
 var  CreateBookView = Marionette.ItemView.extend({
-    template: '#book-create-template',
+    template: template,
     tagName:"div",
     ui:{
         createButton:"#createNewBook",

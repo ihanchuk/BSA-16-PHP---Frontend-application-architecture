@@ -25498,9 +25498,11 @@ var router = new Marionette.AppRouter({
 
 module.exports = router;
 },{"../controllers/controller.js":21}],26:[function(require,module,exports){
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("BookItemView.hbs","Books");
 var BookItemView = Backbone.Marionette.ItemView.extend({
     tagName: "tr",
-    template: '#books-template',
+    template:template,
     ui: {
         deleteModel: ".deleteModel",
         syncModel: ".syncModel",
@@ -25558,7 +25560,7 @@ var BookItemView = Backbone.Marionette.ItemView.extend({
 module.exports = BookItemView;
 
 
-},{}],27:[function(require,module,exports){
+},{"../../lib/TemplateLoader.js":22}],27:[function(require,module,exports){
 var BookItemView = require("../../views/books/BookItemView.js");
 var BooksCollectionView = Backbone.Marionette.CollectionView.extend({
     childView: BookItemView,
@@ -25568,9 +25570,11 @@ var BooksCollectionView = Backbone.Marionette.CollectionView.extend({
 
 module.exports = BooksCollectionView;
 },{"../../views/books/BookItemView.js":26}],28:[function(require,module,exports){
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("CreateBookView.hbs","Books");
 var BookModel =require("../../models/books/BookModel.js");
 var  CreateBookView = Marionette.ItemView.extend({
-    template: '#book-create-template',
+    template: template,
     tagName:"div",
     ui:{
         createButton:"#createNewBook",
@@ -25615,10 +25619,12 @@ var  CreateBookView = Marionette.ItemView.extend({
 });
 
 module.exports = CreateBookView;
-},{"../../models/books/BookModel.js":23}],29:[function(require,module,exports){
+},{"../../lib/TemplateLoader.js":22,"../../models/books/BookModel.js":23}],29:[function(require,module,exports){
 var UserModel =require("../../models/users/UserModel.js");
+var tl = require("../../lib/TemplateLoader.js");
+var template = tl.getTemplate("CreateUserView.hbs","Users");
 var  CreateUserView = Marionette.ItemView.extend({
-    template: '#user-create-template',
+    template: template,
     tagName:"div",
     ui:{
         createButton:"#saveNewUser",
@@ -25663,7 +25669,7 @@ var  CreateUserView = Marionette.ItemView.extend({
 });
 
 module.exports = CreateUserView;
-},{"../../models/users/UserModel.js":24}],30:[function(require,module,exports){
+},{"../../lib/TemplateLoader.js":22,"../../models/users/UserModel.js":24}],30:[function(require,module,exports){
 var UserItemView = require("../../views/users/UserItemView.js");
 var UserCollectionView = Backbone.Marionette.CollectionView.extend({
     childView: UserItemView,
