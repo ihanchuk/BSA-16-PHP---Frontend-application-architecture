@@ -25324,6 +25324,7 @@ $(function() {
 
 
 
+/* File exists only for testing 'concat'  module of grunt*/
 console.log("App almost started");
 },{"./js/controllers/controller.js":20,"./js/router/router.js":23,"backbone":3,"backbone.marionette":2,"cook":1,"jquery":4,"source-map":15}],18:[function(require,module,exports){
 var BookModel = require("../../models/books/BookModel.js");

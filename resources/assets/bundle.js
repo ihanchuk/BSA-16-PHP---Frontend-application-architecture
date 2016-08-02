@@ -4612,6 +4612,8 @@ Marionette = require('backbone.marionette');
 var date = new Date();
 var date = date.toLocaleTimeString();
 var cookies_js = require("cook");
+
+var compiler = require("handlebars.js");
 Backbone.$ = window.$;
 /*
 We don't need cookies for this App at all,
@@ -4645,4 +4647,5 @@ $(function() {
 
 
 
+/* File exists only for testing 'concat'  module of grunt*/
 console.log("App almost started");

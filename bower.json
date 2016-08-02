@@ -1,0 +1,22 @@
+{
+  "name": "bsa-2016-frontend",
+  "description": "bsa-2016-frontend",
+  "main": "index.js",
+  "authors": [
+    "Igor Khanchuk"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cookies-js": "^1.2.2",
+    "handlebars": "^4.0.5"
+  }
+}
