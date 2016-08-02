@@ -4,6 +4,10 @@ Marionette = require('backbone.marionette');
 var date = new Date();
 var date = date.toLocaleTimeString();
 var cookies_js = require("cook");
+
+//var HBS = require("./js/lib/TemplateLoader.js");
+
+
 Backbone.$ = window.$;
 /*
 We don't need cookies for this App at all,

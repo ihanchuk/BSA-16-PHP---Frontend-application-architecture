@@ -29,7 +29,8 @@
     "backbone.marionette": "./node_modules/backbone.marionette/lib/backbone.marionette.js",
     "backbone.wreqr": "./node_modules/backbone.wreqr/lib/backbone.wreqr.js",
     "backbone.babysitter": "./backbone.babysitter/lib/backbone.babysitter.js",
-    "cook": "./bower_components/cookies-js/dist/cookies.js"
+    "cook": "./bower_components/cookies-js/dist/cookies.js",
+    "handlebars": "./bower_components/handlebars/handlebars.js"
   },
   "browserify-shim": {
     "jquery": "$",
@@ -57,7 +58,8 @@
       "depends": [
         "jquery:jQuery",
         "backbone:Backbone",
-        "underscore:_"
+        "underscore:_",
+        "handlebars:Hbs"
       ]
     }
   },
